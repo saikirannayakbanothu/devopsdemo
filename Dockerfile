@@ -1,5 +1,7 @@
 FROM nginx:alpine
-ADD ./devopsdemo /var/www/html/devopsdemo
+
+COPY . /var/www/html/devopsdemo
+
 EXPOSE 80
 EXPOSE 81
 EXPOSE 82
