@@ -1,7 +1,7 @@
-FROM httpd:2.4
+FROM nginx:alpine
 
-RUN mkdir -p /usr/local/apache2/htdocs/devopsIQ
+RUN mkdir -p /usr/share/nginx/html/devopsdemo
 
-COPY index.html /usr/local/apache2/htdocs/devopsIQ/index.html
+COPY index.html /usr/share/nginx/html/devopsdemo/index.html
 
 EXPOSE 80
